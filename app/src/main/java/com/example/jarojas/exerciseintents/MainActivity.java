@@ -43,8 +43,12 @@ public class MainActivity extends AppCompatActivity {
             dpBirthdate.updateDate(year, month, day);
         }
 
+    }
 
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 
     public void clickNext(View view){

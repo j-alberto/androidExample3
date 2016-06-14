@@ -40,6 +40,12 @@ public class ConfirmActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
+
     public void clickEdit(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra(getString(string.key_name), name);
