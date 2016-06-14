@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">ExerciseIntents</string>
+    <string name="app_name">Ejercicio Intents</string>
+    <string name="lbl_name">Nombre</string>
+    <string name="lbl_birthdate">Fecha de Nacimiento</string>
+    <string name="lbl_phone">Teléfono</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_description">Descripción de Contacto</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="title_confirm">Confirmar Datos</string>
+    <string name="btn_edit">Editar Datos</string>
+    <string name="key_name">com.example.jarojas.exerciseintents.name</string>
+    <string name="key_bdate_day">com.example.jarojas.exerciseintents.bdate_day</string>
+    <string name="key_bdate_month">com.example.jarojas.exerciseintents.bdate_month</string>
+    <string name="key_bdate_year">com.example.jarojas.exerciseintents.bdate_year</string>
+    <string name="key_phone">com.example.jarojas.exerciseintents.phone</string>
+    <string name="key_email">com.example.jarojas.exerciseintents.email</string>
+    <string name="key_descr">com.example.jarojas.exerciseintents.description</string>
 </resources>
