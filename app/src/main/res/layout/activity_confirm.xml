@@ -99,8 +99,8 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_edit"
             android:onClick="clickEdit"
-            android:background="@color/colorAccent"
-            android:textColor="@color/white"/>
+            android:theme="@style/customRaisedButton"
+            />
     </LinearLayout>
 
 </LinearLayout>

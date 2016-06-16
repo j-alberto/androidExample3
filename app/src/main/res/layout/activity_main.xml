@@ -23,19 +23,22 @@
             android:inputType="textPersonName" />
     </android.support.design.widget.TextInputLayout>
 
-    <DatePicker
-        android:id="@+id/dpBirthdate"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner">
-
-        <TextView
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_date"
+            android:onClick="showDatePickerDialog"
+            android:theme="@style/customRaisedButton"/>
+        <TextView android:id="@+id/tvBirthdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lbl_birthdate"
-            android:textAlignment="textStart" />
-    </DatePicker>
+            android:textSize="@dimen/date_text_size"/>
+
+    </LinearLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -86,8 +89,7 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/btn_next"
             android:onClick="clickNext"
-            android:background="@color/colorAccent"
-            android:textColor="@color/white"/>
+            android:theme="@style/customRaisedButton"/>
 
     </LinearLayout>
 

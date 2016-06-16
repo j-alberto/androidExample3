@@ -18,6 +18,7 @@ public class ConfirmActivity extends AppCompatActivity {
     private String phone;
     private String email;
     private String description;
+    private String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,13 @@ public class ConfirmActivity extends AppCompatActivity {
         year =  getIntent().getIntExtra(getString(R.string.key_bdate_year),1900);
         month =  getIntent().getIntExtra(getString(R.string.key_bdate_month),1);
         day =  getIntent().getIntExtra(getString(R.string.key_bdate_day),1);
+        date = getIntent().getStringExtra(getString(string.key_bdate));
         phone =  getIntent().getStringExtra(getString(R.string.key_phone));
         email =  getIntent().getStringExtra(getString(R.string.key_email));
         description =  getIntent().getStringExtra(getString(R.string.key_descr));
 
         setTextForTextView(id.detail_tvName, name);
-        setTextForTextView(id.detail_tvBirthdate, String.format("%s/%s/%s", day, month+1, year));
+        setTextForTextView(id.detail_tvBirthdate, date);
         setTextForTextView(id.detail_tvPhone, phone);
         setTextForTextView(id.detail_tvEmail, email);
         setTextForTextView(id.detail_tvDescription, description);
@@ -52,6 +54,7 @@ public class ConfirmActivity extends AppCompatActivity {
         intent.putExtra(getString(string.key_phone), phone);
         intent.putExtra(getString(string.key_email), email);
         intent.putExtra(getString(string.key_descr), description);
+        intent.putExtra(getString(string.key_bdate), date);
         intent.putExtra(getString(string.key_bdate_day), day);
         intent.putExtra(getString(string.key_bdate_month), month);
         intent.putExtra(getString(string.key_bdate_year), year);

@@ -9,10 +9,12 @@
     <string name="title_confirm">Confirmar Datos</string>
     <string name="btn_edit">Editar Datos</string>
     <string name="key_name">com.example.jarojas.exerciseintents.name</string>
+    <string name="key_bdate">com.example.jarojas.exerciseintents.bdate</string>
     <string name="key_bdate_day">com.example.jarojas.exerciseintents.bdate_day</string>
     <string name="key_bdate_month">com.example.jarojas.exerciseintents.bdate_month</string>
     <string name="key_bdate_year">com.example.jarojas.exerciseintents.bdate_year</string>
     <string name="key_phone">com.example.jarojas.exerciseintents.phone</string>
     <string name="key_email">com.example.jarojas.exerciseintents.email</string>
     <string name="key_descr">com.example.jarojas.exerciseintents.description</string>
+    <string name="select_date">Seleccione Fecha</string>
 </resources>
